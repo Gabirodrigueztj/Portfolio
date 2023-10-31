@@ -98,7 +98,7 @@ body {
 
 /* Otros estilos aquí */
 #descripcion {
-  
+  text-align: center;
   font-size: 24px;
   white-space: nowrap; /* Evita saltos de línea */
   overflow: hidden; /* Oculta el texto que aún no se ha animado */
@@ -120,24 +120,22 @@ body {
   0%, 100% {
       border-color: transparent;
   }
-  50% {
+  60% {
       border-color: #000;
   }
 }
 #descripcion-container {
-  margin-left: 45%;
+  margin-left: 43%;
   height: 50px;
-  width: 185px; /* Tamaño deseado de la caja */
+  width: 168px; /* Tamaño deseado de la caja */
   border: 0px solid #000; /* Borde de la caja */
-  padding: 10px; /* Espaciado interno de la caja */
-  overflow: hidden; /* Oculta el exceso de texto que no cabe en la caja */
+  text-align: center;
 }
 
-* { 
-  -webkit-box-sizing: content-box !important;
-  -moz-box-sizing: content-box !important;
-  box-sizing: content-box !important;
-  }
+#fondopagina {
+background-color: rgb(247, 247, 247) ;
+
+}
   
 /* ... */
 
