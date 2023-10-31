@@ -1,0 +1,103 @@
+/* Estilo base */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  width: 150px;
+  height: 100%;
+  padding-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav li {
+  margin-bottom: 15px;
+}
+
+.side-nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.side-nav a:hover {
+  background-color: #e45050;
+  color: white;
+}
+
+/* Estilo de animación */
+
+.animate {
+  animation: fadeInUp 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* Estilo de centrado del header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+  section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  footer {
+    background-color: #333;
+    padding: 20px 0;
+  }
+
+  /* Estilo de los logotipos de redes sociales en el section de contacto */
+/* Estilo de los logotipos de redes sociales y el texto de contacto en el section de contacto */
+
+.redes-sociales {
+  display: flex;
+  gap: 10px; /* Espacio entre los logotipos */
+  align-items: center; /* Centra verticalmente los logotipos */
+  justify-content: center; /* Centra horizontalmente los logotipos */
+}
+
+.redes-sociales a {
+  display: block;
+  text-align: center; /* Centra el contenido dentro del enlace */
+}
+
+.redes-sociales img {
+  width: 50px; /* Ajusta el ancho a tu preferencia */
+  height: auto; /* Mantiene la proporción original */
+}
+
+#fotito {
+  width: 200px;
+  border-radius: 100px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#fotito:hover {
+  transform: scale(1.1); /* Escala la imagen en un 110% */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega una sombra alrededor de la imagen */
+}
+
+
+/* Otros estilos aquí */
+
+/* ... */
+
+  
