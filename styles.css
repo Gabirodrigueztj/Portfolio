@@ -97,7 +97,48 @@ body {
 
 
 /* Otros estilos aquí */
+#descripcion {
+  
+  font-size: 24px;
+  white-space: nowrap; /* Evita saltos de línea */
+  overflow: hidden; /* Oculta el texto que aún no se ha animado */
+  border-right: 2px solid #000; /* Simula el cursor de escritura */
+  animation: escribiendo 3s steps(100) infinite, blink-caret 1s step-end infinite;
+  word-wrap: break-word;
+}
 
+@keyframes escribiendo {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #000;
+  }
+}
+#descripcion-container {
+  margin-left: 45%;
+  height: 50px;
+  width: 185px; /* Tamaño deseado de la caja */
+  border: 0px solid #000; /* Borde de la caja */
+  padding: 10px; /* Espaciado interno de la caja */
+  overflow: hidden; /* Oculta el exceso de texto que no cabe en la caja */
+}
+
+* { 
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important;
+  box-sizing: content-box !important;
+  }
+  
 /* ... */
 
   
