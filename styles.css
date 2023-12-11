@@ -103,7 +103,7 @@ body {
   white-space: nowrap; /* Evita saltos de línea */
   overflow: hidden; /* Oculta el texto que aún no se ha animado */
   border-right: 2px solid #000; /* Simula el cursor de escritura */
-  animation: escribiendo 3s steps(100) infinite, blink-caret 1s step-end infinite;
+  animation: escribiendo 5s steps(150) infinite, blink-caret 1s step-end infinite;
   word-wrap: break-word;
 }
 
@@ -111,9 +111,12 @@ body {
   0% {
       width: 0;
   }
-  100% {
+  50% {
       width: 100%;
   }
+  100% {
+    width: 100%;
+}
 }
 
 @keyframes blink-caret {
