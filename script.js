@@ -29,3 +29,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// Modo nocturno
+document.addEventListener("DOMContentLoaded", function() {
+  const modoNocturnoBtn = document.getElementById("modo-nocturno-btn");
+
+  modoNocturnoBtn.addEventListener("click", function() {
+    // Cambia el modo nocturno
+    document.body.classList.toggle("night-mode");
+
+    // Guarda el estado del modo nocturno en el localStorage
+    const nightModeEnabled = document.body.classList.contains("night-mode");
+    localStorage.setItem("nightModeEnabled", nightModeEnabled);
+  });
+
+  // Verifica si el modo nocturno estaba activado previamente
+  const nightModeEnabled = localStorage.getItem("nightModeEnabled") === "true";
+  if (nightModeEnabled) {
+    document.body.classList.add("night-mode");
+  }
+});
+

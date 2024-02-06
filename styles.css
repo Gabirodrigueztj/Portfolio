@@ -6,6 +6,12 @@ body {
   padding: 0;
 }
 
+body.night-mode {
+  background-color: #333; /* Fondo oscuro */
+  color: white; /* Texto claro */
+}
+
+
 .side-nav {
   position: fixed;
   top: 0;
@@ -59,10 +65,23 @@ body {
     text-align: center;
   }
   
-  footer {
-    background-color: #333;
-    padding: 20px 0;
-  }
+/* Estilo de habilidades */
+
+
+  
+.habilidad {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.habilidad img {
+  width: 400px; /* Ajusta el tamaño del logo según necesites */
+}
+
+.habilidad p {
+  margin-top: 10px;
+}
+
 
   /* Estilo de los logotipos de redes sociales en el section de contacto */
 /* Estilo de los logotipos de redes sociales y el texto de contacto en el section de contacto */
@@ -105,6 +124,8 @@ body {
   border-right: 2px solid #000; /* Simula el cursor de escritura */
   animation: escribiendo 3s steps(100) infinite, blink-caret 1s step-end infinite;
   word-wrap: break-word;
+  margin-left: 50%;
+
 }
 
 @keyframes escribiendo {
@@ -131,12 +152,18 @@ body {
   border: 0px solid #000; /* Borde de la caja */
   text-align: center;
 }
-
-#fondopagina {
-background-color: rgb(247, 247, 247) ;
-
+  
+footer {
+  
+    position: fixed; /* Fija el footer en la parte inferior de la ventana del navegador */
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  
+  
 }
-  
-/* ... */
-
-  
+  /* ... */
